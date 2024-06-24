@@ -1,0 +1,262 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --main-transition: 0.3s;
+}
+/* Start Box */
+.d-flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+.flex-1 {
+  flex: 1;
+}
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
+}
+.d-block {
+  display: block;
+}
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+/* End Box */
+/* Start Padding + Margin */
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.m-0 {
+  margin: 0;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+/* End Padding + Margin */
+/* Start Color */
+.bg-white {
+  background-color: white;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.bg-blue {
+  background-color: var(--blue-color, #0075ff);
+}
+.bg-orange {
+  background-color: var(--orange-color, #f59e0b);
+}
+.bg-green {
+  background-color: var(--green-color, #22c55e);
+}
+.bg-red {
+  background-color: var(--red-color, #f44336);
+}
+.c-black {
+  color: black;
+}
+.c-white {
+  color: white;
+}
+.c-blue {
+  color: var(--blue-color, #0075ff);
+}
+.c-orange {
+  color: var(--orange-color, #f59e0b);
+}
+.c-green {
+  color: var(--green-color, #22c55e);
+}
+.c-red {
+  color: var(--red-color, #f44336);
+}
+.c-grey {
+  color: var(--grey-color, #888);
+}
+/* End Color */
+/* Start Border */
+.b-ccc {
+  border: 1px solid #ccc;
+}
+.bt-eee {
+  border-top: 1px solid #eee;
+}
+.bb-eee {
+  border-bottom: 1px solid #eee;
+}
+.rad-6 {
+  border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.rad-half {
+  border-radius: 50%;
+}
+/* End Border */
+/* Start Font */
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fw-normal {
+  font-weight: normal;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.txt-c {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
+/* End Font */
+/* Start Width + Height */
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+.w-40 {
+  width: 40px;
+}
+.h-full {
+  height: 100%;
+}
+.h-40 {
+  height: 40px;
+}
+/* End Width + Height */
+/* Start Other */
+.p-relative {
+  position: relative;
+}
+.transition-main {
+  transition: var(--main-transition, 0.3s);
+}
+/* End Other */
+/* Start Components */
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.toggle-checkbox {
+  display: none;
+}
+.toggle-switch {
+  width: 78px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 16px;
+  transition: var(--main-transition, 0.3s);
+  cursor: pointer;
+}
+.toggle-switch::before {
+  content: "\f00d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: #aaa;
+  background-color: white;
+  border-radius: 50%;
+  transition: var(--main-transition, 0.3s);
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color, #0075ff);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color, #0075ff);
+}
+/* End Components */
